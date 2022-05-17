@@ -7,7 +7,7 @@
 comorosmap(x = "country", region = FALSE)
 }
 \arguments{
-\item{x}{name of the data set to use, the default is comorompaps(x = "country",region = False)}
+\item{x}{name of the data set to use the default is comorompaps(x = "country",region = False)}
 
 \item{region}{binary variable: TRUE or FALSE. for each x, choose if region = TRUE or FALSE}
 }
@@ -18,5 +18,5 @@ the data set used, in \code{sf} format
 Draw a map of Comoros Islands: by Country, by Island, by Prefecture and by Commune
 }
 \details{
-\code{comorosmaps()}uses the sf package to plot by ploting the geometry rather than every column and leave the plot region ready for overplotting with other data
+\code{comorosmaps()}uses the sf package to plot by plotting the geometry rather than every column and leave the plot region ready for overplotting with other data
 }

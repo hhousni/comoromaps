@@ -9,6 +9,7 @@
 #' @param region binary variable: TRUE or FALSE. for each x, choose if region = TRUE or FALSE
 #'
 #' @return the data set used, in `sf` format
+#'
 #' @export
 #'
 comorosmap <- function(x="country", region=FALSE) {
