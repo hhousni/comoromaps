@@ -18,5 +18,5 @@ the data set used, in \code{sf} format
 Draw a map of Comoros Islands: by Country, by Island, by Prefecture and by Commune
 }
 \details{
-\code{comoromaps()}uses the sf package to plot by ploting the geometry rather than every column and leave the plot region ready for overplotting with other data
+\code{comorosmaps()}uses the sf package to plot by ploting the geometry rather than every column and leave the plot region ready for overplotting with other data
 }

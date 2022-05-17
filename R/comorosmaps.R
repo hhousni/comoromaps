@@ -3,9 +3,9 @@
 #' Draw a map of Comoros Islands: by Country, by Island, by Prefecture and by Commune
 #'
 #'
-#' `comoromaps()`uses the sf package to plot by ploting the geometry rather than every column and leave the plot region ready for overplotting with other data
+#' `comorosmaps()`uses the sf package to plot by plotting the geometry rather than every column and leave the plot region ready for overplotting with other data
 #'
-#' @param x  name of the data set to use, the default is comorompaps(x = "country",region = False)
+#' @param x  name of the data set to use the default is comorompaps(x = "country",region = False)
 #' @param region binary variable: TRUE or FALSE. for each x, choose if region = TRUE or FALSE
 #'
 #' @return the data set used, in `sf` format

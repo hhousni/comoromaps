@@ -1,13 +1,9 @@
-Package: comoromaps
-Title: Comoro Islands maps
+Package: comorosmaps
+Title: Comoro Islands Maps
 Version: 0.0.0.9000
 Authors@R: 
-    person("Housni", "Hassani", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: Maps of Comoros coastline, Islands, Prefecture and Commune. Data 
- can be drawn or accessed directly as simple features objects. Includes
- simple functions for country, Islands, Prefectures and Communes from the Comorian Disaster Management Agenecy, https://dgsc-comores.org/a-propos/.
- kjhkhskhkhkqsgkqqsglk. ggz .zkgzgkgkggggggggaggggag.hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhffffddetyuybuvycycycycccy.
+    person("Housni", "Hassani", , "happrend2@gmail.com", role = c("aut", "cre"))
+Description: The goal of comorosmaps is to map Comoro Island coastline, Islands, Prefecture and Commune. Data can be drawn or accessed directly as simple features objects.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
