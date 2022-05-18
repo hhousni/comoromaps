@@ -3,7 +3,7 @@
 #' A package for mapping Comoro Islands costaline. The package provides one main function `comorosmap()`
 #'
 #' @section comorosmap function:
-#' The comorosmap function allows to plt 3 main maps:
+#' The comorosmap function allows to plot 3 main maps:
 #'    - country: Comoro Islands map as a single object
 #'    - island: Comoro Islands map as triple objects. Each object represents an  Island.
 #'    - "grande comore","moheli", "anjouan": Comoro Islands map island by island
