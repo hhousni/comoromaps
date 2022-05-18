@@ -2,21 +2,35 @@
 % Please edit documentation in R/comorosmaps.R
 \name{comorosmap}
 \alias{comorosmap}
-\title{Comoro Islands Maps}
+\title{Comoro Islands Map}
 \usage{
-comorosmap(x = "country", region = FALSE)
+comorosmap(x = "country", pref = FALSE)
 }
 \arguments{
-\item{x}{name of the data set to use, the default is comorompaps(x = "country",region = False)}
+\item{x}{Name of the data set to use. The default is \code{comorosmpap()}, It draws Comoro Islands as one object without commune.}
 
-\item{region}{binary variable: TRUE or FALSE. for each x, choose if region = TRUE or FALSE}
+\item{pref}{TRUE or FALSE. For each x, choose to map with prefecture area ("pref" = TRUE) or without prefecture area ("pref" = FALSE)}
 }
 \value{
-the data set used, in \code{sf} format
+The data set used is in \code{sf} format
 }
 \description{
-Draw a map of Comoros Islands: by Country, by Island, by Prefecture and by Commune
+Draw  maps of Comoros Islands.
 }
 \details{
-\code{comorosmaps()}uses the sf package to plot by ploting the geometry rather than every column and leave the plot region ready for overplotting with other data
+\code{comorosmap()}uses the sf package to plot by plotting the geometry rather than every column and leave the plot pref ready for overplotting with other data
+}
+\examples{
+comorosmap() ## Map Comoro Islands as one object without prefecture area
+comorosmap("country",pref=TRUE) ## Map Comoro Islands as one object with prefecture area
+comorosmap("island",pref=FALSE) ## Map Comoros Islands as 3 object (Grande Comore, Anjouan, Mohéli) without prefecture area.
+comorosmap("island",pref=TRUE) ## Map Comoros Islands as 3 object (Grande Comore, Anjouan, Mohéli) with prefecture area.
+comorosmap("anjouan",pref=FALSE) ## Map Anjouan island without prefcture area
+comorosmap("anjouan",pref=TRUE) ## Map Anjouan island with prefcture area
+comorosmap("moheli",pref=FALSE) ## Map Mohéli island without prefcture area
+comorosmap("moheli",pref=TRUE) ## Map Mohéli island with prefcture area
+comorosmap("grande comore",pref=FALSE) ## Map Grande Comore island without prefcture area
+comorosmap("grande comore",pref=TRUE) ## Map Grande Comore island with prefcture area
+
+
 }

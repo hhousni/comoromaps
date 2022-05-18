@@ -1,54 +1,74 @@
-#' Comoro Islands Maps
+#' Comoro Islands Map
 #'
-#' Draw a map of Comoros Islands: by Country, by Island, by Prefecture and by Commune
+#' Draw  maps of Comoros Islands.
 #'
 #'
-#' `comorosmaps()`uses the sf package to plot by plotting the geometry rather than every column and leave the plot region ready for overplotting with other data
+#' `comorosmap()`uses the sf package to plot by plotting the geometry rather than every column and leave the plot pref ready for overplotting with other data
 #'
-#' @param x  name of the data set to use the default is comorompaps(x = "country",region = False)
-#' @param region binary variable: TRUE or FALSE. for each x, choose if region = TRUE or FALSE
+#' @param x     Name of the data set to use. The default is `comorosmpap()`, It draws Comoro Islands as one object without commune.
+#' @param pref  TRUE or FALSE. For each x, choose to map with prefecture area ("pref" = TRUE) or without prefecture area ("pref" = FALSE)
+#' @examples
+#' comorosmap() ## Map Comoro Islands as one object without prefecture area
+#' comorosmap("country",pref=TRUE) ## Map Comoro Islands as one object with prefecture area
+#' comorosmap("island",pref=FALSE) ## Map Comoros Islands as 3 object (Grande Comore, Anjouan, Mohéli) without prefecture area.
+#' comorosmap("island",pref=TRUE) ## Map Comoros Islands as 3 object (Grande Comore, Anjouan, Mohéli) with prefecture area.
+#' comorosmap("anjouan",pref=FALSE) ## Map Anjouan island without prefcture area
+#' comorosmap("anjouan",pref=TRUE) ## Map Anjouan island with prefcture area
+#' comorosmap("moheli",pref=FALSE) ## Map Mohéli island without prefcture area
+#' comorosmap("moheli",pref=TRUE) ## Map Mohéli island with prefcture area
+#' comorosmap("grande comore",pref=FALSE) ## Map Grande Comore island without prefcture area
+#' comorosmap("grande comore",pref=TRUE) ## Map Grande Comore island with prefcture area
 #'
-#' @return the data set used, in `sf` format
+#'
+#' @return The data set used is in `sf` format
 #' @export
 #'
-comorosmap <- function(x="country", region=FALSE) {
-  if (x=="country" & region==TRUE) {
+comorosmap <- function(x="country", pref=FALSE) {
+  if (x=="country" & pref==TRUE) {
     state <- comoromaps_data %>%
 
       filter (amdinCode %in% c("KM","KM1","KM2","KM3","KM31","KM11","KM32","KM21","KM22","KM23","KM29","KM24","KM25","KM26","KM27",
                           "KM12","KM13","KM33","KM28","KM14","KM15","KM31","KM11","KM32","KM21","KM22","KM23","KM29","KM24","KM25"
                           ,"KM26","KM27","KM12","KM13","KM33","KM28","KM14","KM15"))
 
-  } else if (x=="country" & region==FALSE) {
+  } else if (x=="country" & pref==FALSE) {
     state <- comoromaps_data %>%
 
       filter (amdinCode %in% c("KM"))
-  } else if (x=="island" & region==FALSE) {
+  } else if (x=="island" & pref==FALSE) {
     state <- comoromaps_data %>%
 
       filter (amdinCode %in% c("KM1","KM2","KM3"))
-  } else if (x=="grande comore" & region ==TRUE) {
+  } else if (x=="island" & pref==TRUE) {
+    state <- comoromaps_data %>%
+
+      filter (amdinCode %in% c("KM","KM1","KM2","KM3","KM31","KM11","KM32","KM21","KM22","KM23","KM29","KM24","KM25","KM26","KM27",
+                               "KM12","KM13","KM33","KM28","KM14","KM15","KM31","KM11","KM32","KM21","KM22","KM23","KM29","KM24","KM25"
+                               ,"KM26","KM27","KM12","KM13","KM33","KM28","KM14","KM15"))
+  }
+
+  else if (x=="grande comore" & pref ==TRUE) {
     state <- comoromaps_data %>%
 
       filter (amdinCode %in% c("KM21","KM22","KM23","KM24","KM25","KM26","KM27",
                           "KM28","KM29"))
-  } else if (x=="grande comore" & region ==FALSE) {
+  } else if (x=="grande comore" & pref ==FALSE) {
     state <- comoromaps_data %>%
 
       filter (amdinCode %in% c("KM2"))
-  } else if (x=="anjouan" & region ==TRUE) {
+  } else if (x=="anjouan" & pref ==TRUE) {
     state <- comoromaps_data %>%
 
       filter (amdinCode %in% c("KM11","KM12","KM13","KM14","KM15"))
-  } else if (x=="anjouan" & region == FALSE) {
+  } else if (x=="anjouan" & pref == FALSE) {
     state <- comoromaps_data %>%
 
       filter (amdinCode %in% c("KM1"))
-  } else if (x=="moheli" & region ==TRUE) {
+  } else if (x=="moheli" & pref ==TRUE) {
     state <- comoromaps_data %>%
 
       filter (amdinCode %in% c("KM31","KM32","KM33"))
-  } else if (x=="moheli" & region == FALSE) {
+  } else if (x=="moheli" & pref == FALSE) {
     state <- comoromaps_data %>%
 
       filter (amdinCode %in% c("KM3"))

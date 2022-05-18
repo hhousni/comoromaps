@@ -1,4 +1,4 @@
 library(testthat)
-library(comoromaps)
+library(comorosmaps)
 
-test_check("comoromaps")
+test_check("comorosmaps")

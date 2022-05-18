@@ -1,0 +1,62 @@
+---
+output: github_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include = FALSE}
+library(dplyr)
+library(sf)
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+#knitr::read_chunk("data-raw/download_2016.R")
+```
+
+# Overview
+
+The goal of comorosmpas is to get maps of Comoro Islands to plot!
+
+# Installation
+
+Install from CRAN with 
+
+```{r install, eval=FALSE}
+install.packages("comorosmaps")
+```
+
+The development version of ozmaps may be installed directly from github. 
+
+```{r dev-install, eval = FALSE}
+devtools::install_github("hhousni/comorosmaps")
+```
+
+## Usage
+
+Plot Comoro Islands as one country without region. 
+
+```{r }
+library(comorosmaps)
+comorosmap()
+```
+
+Plot Comoro Islands as one country with region. 
+
+```{r }
+comorosmap(region = TRUE)
+```
+
+Plot Moheli Island without region. 
+
+```{r }
+comorosmap("moheli")
+```
+
+Plot Moheli Island with region. 
+
+```{r }
+comorosmap("moheli", region = TRUE)
+```
