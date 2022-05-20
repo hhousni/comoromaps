@@ -78,3 +78,46 @@ comorosmap <- function(x="country", pref=FALSE) {
 
   plot(sf::st_geometry(state))
 }
+
+
+
+grandeComore <- function(x="grande comore", pref=FALSE) {
+  if (x=="grande comore" & pref ==TRUE) {
+    state <- comoromaps_data %>%
+      filter (adminCode %in% c("KM21","KM22","KM23","KM24","KM25","KM26","KM27",
+                               "KM28","KM29"))
+  } else if (x=="grande comore" & pref == FALSE) {
+    state <- state <- comoromaps_data %>%
+      filter (adminCode %in% c("KM2"))
+  } else
+    state <- print("error")
+  plot(sf::st_geometry(state))
+}
+
+
+anjouan <- function(x="anjouan", pref=FALSE) {
+  if (x=="anjouan" & pref ==TRUE) {
+    state <- comoromaps_data %>%
+      filter (adminCode %in% c("KM11","KM12","KM13","KM14","KM15"))
+  } else if (x=="anjouan" & pref == FALSE) {
+    state <- state <- comoromaps_data %>%
+      filter (adminCode %in% c("KM1"))
+  } else
+    state <- print("error")
+  plot(sf::st_geometry(state))
+}
+
+
+
+moheli <- function(x="moheli", pref=FALSE) {
+  if (x=="moheli" & pref ==TRUE) {
+    state <- comoromaps_data %>%
+      filter (adminCode %in% c("KM31","KM32","KM33"))
+  } else if (x=="moheli" & pref == FALSE) {
+    state <- state <- comoromaps_data %>%
+      filter (adminCode %in% c("KM3"))
+  } else
+    state <- print("error")
+  plot(sf::st_geometry(state))
+}
+

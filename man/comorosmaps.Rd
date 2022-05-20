@@ -9,7 +9,7 @@ A package for mapping Comoro Islands costaline. The package provides one main fu
 }
 \section{comorosmap function}{
 
-The comorosmap function allows to plt 3 main maps:
+The comorosmap function allows to plot 3 main maps:
 \itemize{
 \item country: Comoro Islands map as a single object
 \item island: Comoro Islands map as triple objects. Each object represents an  Island.
