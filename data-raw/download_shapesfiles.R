@@ -15,16 +15,16 @@ admin3 <- st_read("data-raw/shp_files/com_admbnda_adm3_cosep_ocha_20191205.shp")
 # Remove unnecessary col
 
 country <- admin0 %>%
-  select ("country"=ADM0_EN,"adminCode"=ADM0_PCODE,geometry)
+  select ("name"=ADM0_EN,"adminCode"=ADM0_PCODE,geometry)
 
 island <- admin1 %>%
-  select ("country"=ADM1_EN,"adminCode"=ADM1_PCODE,geometry)
+  select ("name"=ADM1_EN,"adminCode"=ADM1_PCODE,geometry)
 
 prefecture <- admin2 %>%
-  select ("country"=ADM2_EN,"adminCode"=ADM2_PCODE,geometry)
+  select ("name"=ADM2_EN,"adminCode"=ADM2_PCODE,geometry)
 
 commune <- admin2 %>%
-  select ("country"=ADM2_EN,"adminCode"=ADM2_PCODE,geometry)
+  select ("name"=ADM2_EN,"adminCode"=ADM2_PCODE,geometry)
 
 comoromaps_data <- rbind(country,island, prefecture,commune)
 

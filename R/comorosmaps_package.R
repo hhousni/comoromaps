@@ -1,6 +1,6 @@
 #' comorosmaps: Comoro Islands Maps
 #'
-#' A package for mapping Comoro Islands costaline. The package provides one main function `comorosmap()`
+#' A package for mapping Comoro Islands costaline. The package provides three main functions:`comorosmap()`,`grandeComore()`, `anjouan()`, `moheli()`
 #'
 #' @section comorosmap function:
 #' The comorosmap function allows to plot 3 main maps:

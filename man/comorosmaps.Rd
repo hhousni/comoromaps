@@ -5,7 +5,7 @@
 \alias{comorosmaps}
 \title{comorosmaps: Comoro Islands Maps}
 \description{
-A package for mapping Comoro Islands costaline. The package provides one main function \code{comorosmap()}
+A package for mapping Comoro Islands costaline. The package provides three main functions:\code{comorosmap()},\code{grandeComore()}, \code{anjouan()}, \code{moheli()}
 }
 \section{comorosmap function}{
 
