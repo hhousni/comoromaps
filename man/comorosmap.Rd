@@ -9,7 +9,7 @@ comorosmap(x = "country", pref = FALSE)
 \arguments{
 \item{x}{Name of the data set to use. The default is \code{comorosmpap()}, It draws Comoro Islands as one object without commune.}
 
-\item{pref}{TRUE or FALSE. For each x, choose to map with prefecture area ("pref" = TRUE) or without prefecture area ("pref" = FALSE)}
+\item{pref}{Choose to map with prefecture area ("pref" = TRUE) or without prefecture area ("pref" = FALSE)}
 }
 \value{
 The data set used is in \code{sf} format

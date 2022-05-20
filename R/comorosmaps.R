@@ -6,7 +6,7 @@
 #' `comorosmap()`uses the sf package to plot by plotting the geometry rather than every column and leave the plot pref ready for overplotting with other data
 #'
 #' @param x     Name of the data set to use. The default is `comorosmpap()`, It draws Comoro Islands as one object without commune.
-#' @param pref  TRUE or FALSE. For each x, choose to map with prefecture area ("pref" = TRUE) or without prefecture area ("pref" = FALSE)
+#' @param pref  Choose to map with prefecture area ("pref" = TRUE) or without prefecture area ("pref" = FALSE)
 #' @examples
 #' comorosmap() ## Map Comoro Islands as one object without prefecture area
 #' comorosmap("country",pref=TRUE) ## Map Comoro Islands as one object with prefecture area
@@ -74,14 +74,19 @@ comorosmap <- function(x="country", pref=FALSE) {
   plot(sf::st_geometry(x))
   invisible(x)
 }
-
-#' @param x     Name of the data set to use. The default is `comorosmpap()`, It draws Comoro Islands as one object without commune.
-#' @param pref  TRUE or FALSE. For each x, choose to map with prefecture area ("pref" = TRUE) or without prefecture area ("pref" = FALSE)
-#' @examples
+#'
+#' Draw a map for Grande Comore Island
+#'
+#'
+#' @param x     Name of the data set to use. The default is `grandeComore()`, It draws Grande Comore Island as one object without prefecture.
+#' @param pref  Choose to map with prefecture area ("pref" = TRUE) or without prefecture area ("pref" = FALSE)
 #'
 #'
 #' @return The data set used is in `sf` format
 #' @export
+#' @examples
+#' grandeComore ()
+#' grandeComore (pref = TRUE)
 #'
 grandeComore <- function(x="grande comore", pref=FALSE) {
   if (x=="grande comore" & pref ==TRUE) {
@@ -98,10 +103,14 @@ grandeComore <- function(x="grande comore", pref=FALSE) {
   plot(sf::st_geometry(x))
   invisible(x)
 }
-
-#' @param x     Name of the data set to use. The default is `comorosmpap()`, It draws Comoro Islands as one object without commune.
-#' @param pref  TRUE or FALSE. For each x, choose to map with prefecture area ("pref" = TRUE) or without prefecture area ("pref" = FALSE)
+#'
+#' Draw a map for Anjouan Island
+#'
+#' @param x     Name of the data set to use. The default is `anjouan()`, It draws Anjouan Island as one object without prefecture.
+#' @param pref  Choose to map with prefecture area ("pref" = TRUE) or without prefecture area ("pref" = FALSE)
 #' @examples
+#' anjouan ()
+#' anjouan (pref = TRUE)
 #'
 #'
 #' @return The data set used is in `sf` format
@@ -121,15 +130,18 @@ anjouan <- function(x="anjouan", pref=FALSE) {
   plot(sf::st_geometry(x))
   invisible(x)
 }
-#' @param x     Name of the data set to use. The default is `comorosmpap()`, It draws Comoro Islands as one object without commune.
-#' @param pref  TRUE or FALSE. For each x, choose to map with prefecture area ("pref" = TRUE) or without prefecture area ("pref" = FALSE)
-#' @examples
 #'
+#' Draw a map for Moheli Islands
+#'
+#' @param x     Name of the data set to use. The default is `moheli()`, It draws Moheli Islands as one object without prefecture.
+#' @param pref  Choose to map with prefecture area ("pref" = TRUE) or without prefecture area ("pref" = FALSE)
+#' @examples
+#' moheli ()
+#' moheli (pref = TRUE)
 #'
 #' @return The data set used is in `sf` format
 #' @export
 #'
-
 moheli <- function(x="moheli", pref=FALSE) {
   if (x=="moheli" & pref ==TRUE) {
     x <- comoromaps_data %>%
