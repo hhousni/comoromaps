@@ -2,7 +2,7 @@
 % Please edit documentation in R/comorosmaps.R
 \name{moheli}
 \alias{moheli}
-\title{Draw a map for Moheli Islands}
+\title{Moheli}
 \usage{
 moheli(x = "moheli", pref = FALSE)
 }
@@ -18,7 +18,9 @@ The data set used is in \code{sf} format
 Draw a map for Moheli Islands
 }
 \examples{
+## Map Moheli Island
 moheli ()
+## Map Moheli Island with prefecture area
 moheli (pref = TRUE)
 
 }

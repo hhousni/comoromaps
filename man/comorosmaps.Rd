@@ -6,7 +6,7 @@
 \title{comorosmaps: Comoro Islands Maps}
 \description{
 A package for mapping Comoro Islands coastline and prefecture area. Data can be drawn or accessed directly as simple features objects.
-The package includes simple function for each Island: \code{grandeComore()}, \code{anjouan()}, \code{moheli()}.
+The package includes simple function for each Island: \code{grandeComore()}, \code{anjouan()}, \code{moheli()} and a function for the country \code{comoros()}
 }
 \seealso{
 Useful links:

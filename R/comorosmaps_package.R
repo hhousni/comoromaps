@@ -1,7 +1,7 @@
 #' comorosmaps: Comoro Islands Maps
 #'
 #' A package for mapping Comoro Islands coastline and prefecture area. Data can be drawn or accessed directly as simple features objects.
-#' The package includes simple function for each Island: `grandeComore()`, `anjouan()`, `moheli()`.
+#' The package includes simple function for each Island: `grandeComore()`, `anjouan()`, `moheli()` and a function for the country `comoros()`
 #'
 #'
 #'

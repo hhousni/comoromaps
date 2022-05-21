@@ -2,7 +2,7 @@
 % Please edit documentation in R/comorosmaps.R
 \name{grandeComore}
 \alias{grandeComore}
-\title{Draw a map for Grande Comore Island}
+\title{Grande Comore}
 \usage{
 grandeComore(x = "grande comore", pref = FALSE)
 }
@@ -18,7 +18,9 @@ The data set used is in \code{sf} format
 Draw a map for Grande Comore Island
 }
 \examples{
+## Map Grande Comore Island
 grandeComore ()
+## Map Grande Comore with prefecture area
 grandeComore (pref = TRUE)
 
 }
