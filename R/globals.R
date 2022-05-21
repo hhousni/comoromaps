@@ -1,1 +1,1 @@
-utils::globalVariables(c("amdinCode", "state", "filter"))
+utils::globalVariables(c("adminCode", "x","name","geometry"))

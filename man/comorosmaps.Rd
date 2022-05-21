@@ -5,20 +5,9 @@
 \alias{comorosmaps}
 \title{comorosmaps: Comoro Islands Maps}
 \description{
-A package for mapping Comoro Islands costaline. The package provides one main function \code{comorosmap()}
+A package for mapping Comoro Islands coastline and prefecture area. Data can be drawn or accessed directly as simple features objects.
+The package includes simple function for each Island: \code{grandeComore()}, \code{anjouan()}, \code{moheli()} and a function for the country \code{comoros()}
 }
-\section{comorosmap function}{
-
-The comorosmap function allows to plt 3 main maps:
-\itemize{
-\item country: Comoro Islands map as a single object
-\item island: Comoro Islands map as triple objects. Each object represents an  Island.
-\item "grande comore","moheli", "anjouan": Comoro Islands map island by island
-}
-
-For each map, comorosmap function allows to map with or without administrative region.
-}
-
 \seealso{
 Useful links:
 \itemize{
