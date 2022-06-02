@@ -5,7 +5,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Housni", "Hassani", , "happrend2@gmail.com", 
     role = c("aut", "cre"))
-Description: Maps of Comoro Islands. Layers include the country costaline, each island costaline and administrative regions.
+Description: Maps of Comoro Islands. Layers include the country coastline, each island coastline and administrative regions boundaries.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
