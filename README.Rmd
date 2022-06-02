@@ -28,7 +28,7 @@ Install from CRAN with
 install.packages("comorosmaps")
 ```
 
-The development version of ozmaps may be installed directly from github. 
+The development version of comorosmaps may be installed directly from github. 
 
 ```{r dev-install, eval = FALSE}
 devtools::install_github("hhousni/comorosmaps")
@@ -36,27 +36,51 @@ devtools::install_github("hhousni/comorosmaps")
 
 ## Usage
 
-Plot Comoro Islands as one country without region. 
+Plot Comoro islands as one country without region. 
 
 ```{r }
 library(comorosmaps)
-comorosmap()
+comoros()
 ```
 
-Plot Comoro Islands as one country with region. 
+Plot Comoro islands as one country with region. 
 
 ```{r }
-comorosmap(region = TRUE)
+comoros(pref = TRUE)
 ```
 
-Plot Moheli Island without region. 
+Plot Moheli island without region. 
 
 ```{r }
-comorosmap("moheli")
+moheli()
 ```
 
-Plot Moheli Island with region. 
+Plot Moheli island with region. 
 
 ```{r }
-comorosmap("moheli", region = TRUE)
+moheli(pref = TRUE)
+```
+
+Plot Anjouan island without region. 
+
+```{r }
+anjouan()
+```
+
+Plot Moheli island with region. 
+
+```{r }
+anjouan(pref = TRUE)
+```
+
+Plot Grande Comore island without region. 
+
+```{r }
+grandeComore()
+```
+
+Plot Grande Comore island with region. 
+
+```{r }
+grandeComore(pref = TRUE)
 ```
