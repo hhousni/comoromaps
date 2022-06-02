@@ -76,6 +76,7 @@ grandeComore <- function(x="grande comore", pref=FALSE) {
 }
 #'
 #' Anjouan
+#'
 #' Draw a map for Anjouan Island
 #'
 #' @param x     Name of the data set to use. The default is `anjouan()`, It draws Anjouan Island as one object without prefecture.

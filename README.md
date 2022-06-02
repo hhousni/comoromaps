@@ -11,7 +11,8 @@ Install from CRAN with
 install.packages("comorosmaps")
 ```
 
-The development version of ozmaps may be installed directly from github.
+The development version of comorosmaps may be installed directly from
+github.
 
 ``` r
 devtools::install_github("hhousni/comorosmaps")
@@ -19,35 +20,67 @@ devtools::install_github("hhousni/comorosmaps")
 
 ## Usage
 
-Plot Comoro Islands as one country without region.
+Plot Comoro islands as one country without region.
 
 ``` r
 library(comorosmaps)
-comorosmap()
+comoros()
 ```
 
 <img src="man/figures/README-unnamed-chunk-1-1.png" width="100%" />
 
-Plot Comoro Islands as one country with region.
+Plot Comoro islands as one country with region.
 
 ``` r
-comorosmap(region = TRUE)
+comoros(pref = TRUE)
 ```
 
 <img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
 
-Plot Moheli Island without region.
+Plot Moheli island without region.
 
 ``` r
-comorosmap("moheli")
+moheli()
 ```
 
 <img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
 
-Plot Moheli Island with region.
+Plot Moheli island with region.
 
 ``` r
-comorosmap("moheli", region = TRUE)
+moheli(pref = TRUE)
 ```
 
 <img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
+
+Plot Anjouan island without region.
+
+``` r
+anjouan()
+```
+
+<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
+
+Plot Moheli island with region.
+
+``` r
+anjouan(pref = TRUE)
+```
+
+<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
+
+Plot Grande Comore island without region.
+
+``` r
+grandeComore()
+```
+
+<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
+
+Plot Grande Comore island with region.
+
+``` r
+grandeComore(pref = TRUE)
+```
+
+<img src="man/figures/README-unnamed-chunk-8-1.png" width="100%" />
