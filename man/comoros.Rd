@@ -24,10 +24,10 @@ Draw  maps of Comoros Islands.
 ## Map Comoro Islands as one object without prefecture area
 comoros()
 ## Map Comoro Islands as one object with prefecture area
-comoros("country",pref=TRUE)
+comoros(x="country",pref=TRUE)
 ## Map Comoros Islands as 3 object (Grande Comore, Anjouan, Mohéli) without prefecture area.
-comoros("island",pref=FALSE)
+comoros(x="island",pref=FALSE)
 ## Map Comoros Islands as 3 object (Grande Comore, Anjouan, Mohéli) with prefecture area
-comoros("island",pref=TRUE)
+comoros(x="island",pref=TRUE)
 
 }

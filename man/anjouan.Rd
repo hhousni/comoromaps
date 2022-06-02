@@ -2,8 +2,7 @@
 % Please edit documentation in R/comorosmaps.R
 \name{anjouan}
 \alias{anjouan}
-\title{Anjouan
-Draw a map for Anjouan Island}
+\title{Anjouan}
 \usage{
 anjouan(x = "anjouan", pref = FALSE)
 }
@@ -16,7 +15,6 @@ anjouan(x = "anjouan", pref = FALSE)
 The data set used is in \code{sf} format
 }
 \description{
-Anjouan
 Draw a map for Anjouan Island
 }
 \examples{
@@ -24,6 +22,5 @@ Draw a map for Anjouan Island
 anjouan ()
 ## Map Anjouan Island with prefecture area.
 anjouan (pref = TRUE)
-
 
 }

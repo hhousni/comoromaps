@@ -22,5 +22,4 @@ Draw a map for Moheli Islands
 moheli ()
 ## Map Moheli Island with prefecture area
 moheli (pref = TRUE)
-
 }
